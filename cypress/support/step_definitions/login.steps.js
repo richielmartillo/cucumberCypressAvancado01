@@ -1,16 +1,16 @@
 import { Given, When, Then, DataTable } from '@badeball/cypress-cucumber-preprocessor';
 
+beforeEach(() => {
+        cy.visit('login.html')
+    
+});
+
 Given(`que o usuário está na página de login`, () => {
-    cy.visit('http://localhost:3000/login.html')
-    cy.wait(1000)
+cy.url().should('include', '/login.html')
 });
 
 When(`faço login com credenciais válidas`, () => {
-    cy.get('#email').type('usuario@teste.com')
-    cy.get('#password').type('user123')
-    cy.get('#login-btn').click()
-    cy.wait(1000)
-    // cy.url().should('include', '/dashboard.html')
+ cy.login('usuario@teste.com', 'user123')
 });
 
 Then(`deve exibir a mensagem {string}`, (mensagem) => {
@@ -31,3 +31,4 @@ Then(`o sistema deve exibir a mensagem {string}`, (mensagem) => {
         .and('have.class', 'alert-danger')
         .and('contain.text', mensagem)
 });
+
