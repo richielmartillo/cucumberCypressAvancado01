@@ -1,16 +1,19 @@
 import { Given, When, Then, DataTable } from '@badeball/cypress-cucumber-preprocessor';
 
 beforeEach(() => {
-        cy.visit('login.html')
+        cy.visit('/login.html')
     
 });
 
 Given(`que o usuário está na página de login`, () => {
-cy.url().should('include', '/login.html')
+  cy.url().should('include', '/login.html')
+  cy.get('#email').should('be.visible')
+  cy.get('#password').should('be.visible')
+  cy.get('#login-btn').should('be.visible')
 });
 
 When(`faço login com credenciais válidas`, () => {
- cy.login('usuario@teste.com', 'user123')
+ cy.loginComoUsuarioPadrao()
 });
 
 Then(`deve exibir a mensagem {string}`, (mensagem) => {
