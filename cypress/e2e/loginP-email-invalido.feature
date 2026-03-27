@@ -10,8 +10,8 @@
       Então deve aparecer a mensagem de email inválido "<mensagem>"
 
       Exemplos:
-      | email          | senha      | mensagem                           |
-      
+      | email | senha | mensagem |
+
       | MarioBro@email | user230101 | Por favor, insira um email válido. |
       | Batmen.com     | 0000007    | Por favor, insira um email válido. |
-        | Batmen.com     | 0000007    | Por favor, insira um email válido. |
+      | Batmen.com     | 0000007    | Por favor, insira um email válido. |
