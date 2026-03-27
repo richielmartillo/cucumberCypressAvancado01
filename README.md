@@ -1,45 +1,30 @@
-# cucumber-cypress-exemplo
+# cucumberCypressAvancado01
 
-Exemplo de automação de testes usando Cypress com Cucumber para estudantes da EBAC.
+Projeto de automação de testes end-to-end (E2E) com Cypress e Cucumber, desenvolvido como prática do curso de **Engenheiro de Qualidade de Software** da **EBAC**.
 
-## 📋 Pré-requisitos
+O objetivo deste repositório é demonstrar a automação de cenários de login utilizando a abordagem BDD, com escrita de cenários em Gherkin e implementação dos testes com Cypress.
 
-- Node.js (versão 14 ou superior)
-- npm ou yarn
+## Objetivo do projeto
+
+Este projeto foi criado para praticar:
+
+- automação de testes E2E
+- escrita de cenários em Gherkin
+- estruturação de testes com Cypress + Cucumber
+- validação de login com cenários positivos e negativos
+- utilização de massa de dados em testes automatizados
+
+## Pré-requisitos
+
+Antes de executar o projeto, é necessário ter instalado:
+
+- [Node.js](https://nodejs.org/)
+- npm
 - Git
+- Visual Studio Code (opcional)
 
-## 🚀 Como usar este projeto
+## Como clonar o repositório
 
-### 1. Clone o repositório
 ```bash
-git clone https://github.com/EBAC-QE/cucumber-cypress-exemplo.git
-cd cucumber-cypress-exemplo
-```
-
-### 2. Instale as dependências
-```bash
-npm install
-```
-
-### 3. Execute os testes
-```bash
-# Executar testes em modo headless
-npx cypress run
-
-# Executar testes com interface gráfica
-npx cypress open
-```
-# Excutar testes com tags
-```bash
-npx cypress run --env tags='@learn'
-```
-
-## 🛠 Tecnologias utilizadas
-
-- **Cypress** - Framework de testes E2E
-- **Cucumber** - Ferramenta BDD para escrita de cenários
-- **JavaScript** - Linguagem de programação
-
-## 📚 Recursos de aprendizado
-
-Este projeto foi criado para fins educacionais da EBAC (Escola Britânica de Artes Criativas e Tecnologia).
+git clone https://github.com/richielmartillo/cucumberCypressAvancado01.git
+cd cucumberCypressAvancado01
